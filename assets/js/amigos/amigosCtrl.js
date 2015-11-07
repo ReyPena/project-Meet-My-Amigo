@@ -1,0 +1,3 @@
+angular.module("meetMyAmigo").controller("amigosCtrl", function () {
+  // body...
+})

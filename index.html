@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="meetMyAmigo">
+<head>
+  <meta charset="UTF-8">
+  <title>meetMyAmigo</title>
+  <link rel="shorcut icon" href="assets/img/fabi.ico">
+  <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+  <!-- *********this is the nav bar**************** -->
+  <nav class="navbar">
+    <!-- this is the logo  -->
+     <img class="logo" src="assets/img/logoarr.png" alt="logo">
+     <!-- this are the options  -->
+    <ul class="navOptions">
+      <li><a class="buttonNav" href="/#/home">Home</a></li>
+      <li><a class="buttonNav"href="/#/profile">Profile</a></li>
+      <li><a class="buttonNav" href="/#/amigos">Amigos</a></li>
+    </ul>
+  </nav>
+
+<!-- this is the wrap that contains the  -->
+<div class="wrap">
+<!-- here is where everthing will be  -->
+  <ui-view></ui-view>
+</div>
+
+
+<!-- here are all the scripts and libraries  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js" charset="utf-8"></script>
+  <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
+  <script src="assets/js/app.js" charset="utf-8"></script>
+  <script src="assets/js/home/homeCtrl.js" charset="utf-8"></script>
+  <script src="assets/js/login/loginCtrl.js" charset="utf-8"></script>
+  <script src="assets/js/profile/profileCtrl.js" charset="utf-8"></script>
+  <script src="assets/js/amigos/amigosCtrl.js" charset="utf-8"></script>
+  <script src="assets/js/faq/faqCtrl.js" charset="utf-8"></script>
+
+</body>
+</html>
