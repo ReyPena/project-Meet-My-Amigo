@@ -4,32 +4,42 @@
   <meta charset="UTF-8">
   <title>meetMyAmigo</title>
   <link rel="shorcut icon" href="assets/img/fabi.ico">
-  <link rel="stylesheet" href="assets/style/style.css">
+  <!-- <link rel="stylesheet" href="assets/style/style.css"> -->
+
+  <!-- this bootstrap's library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 </head>
 <body>
   <!-- *********this is the nav bar**************** -->
-  <nav class="navbar">
-    <!-- this is the logo  -->
-     <img class="logo" src="assets/img/logoarr.png" alt="logo">
-     <!-- this are the options  -->
-    <ul class="navOptions">
-      <li><a class="buttonNav" href="/#/home">Home</a></li>
-      <li><a class="buttonNav"href="/#/profile">Profile</a></li>
-      <li><a class="buttonNav" href="/#/amigos">Amigos</a></li>
-    </ul>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <img src="assets/img/logoarr.png" alt="bran"  width="150" height="50">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="/#/home">Home</a></li>
+        <li><a href="/#/profile">Profile</a></li>
+        <li><a href="/#/amigos">Amigos</a></li>
+      </ul>
+    </div>
   </nav>
 
-<!-- this is the wrap that contains the  -->
-<div class="wrap">
-<!-- here is where everthing will be  -->
-  <ui-view></ui-view>
+<div class="container">
+  <div class="row">
+    <!-- here is where everthing will be  -->
+    <ui-view></ui-view>
+  </div>
 </div>
 
 
 <!-- here are all the scripts and libraries  -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js" charset="utf-8"></script>
+  <!-- angular -->
   <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js" charset="utf-8"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
   <script src="assets/js/app.js" charset="utf-8"></script>
   <script src="assets/js/home/homeCtrl.js" charset="utf-8"></script>
   <script src="assets/js/login/loginCtrl.js" charset="utf-8"></script>
