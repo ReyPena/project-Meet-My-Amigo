@@ -1,4 +1,4 @@
-angular.module("meetMyAmigo", ["ui.router"])
+angular.module("meetMyAmigo", ["ui.router", "firebase"])
 .config(function ($stateProvider, $urlRouterProvider) {
   // this are the routes
   $stateProvider
