@@ -23,3 +23,20 @@
     </form>
   </div>
 </div>
+<br>
+<div class="container">
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail" ng-repeat="amigo in amigos">
+      <img class="img-circle center-block" src="assets/img/pic.png" width="220" height="220" alt="Profile Picture" />
+      <div class="caption">
+        <h4>{{amigo.name}} {{amigo.lastName}}</h4>
+        <h3>{{amigo.nickname}}</h3>
+        <p>Gender: {{amigo.description.gender}}</p>
+        <p>Description: {{amigo.description.about}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

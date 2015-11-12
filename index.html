@@ -9,7 +9,7 @@
   <!-- this bootstrap's library -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 </head>
-<body>
+<body ng-controller="mainCtrl">
   <!-- *********this is the nav bar**************** -->
 
   <nav class="navbar navbar-default" role="navigation">
@@ -19,8 +19,10 @@
       </div>
       <ul class="nav navbar-nav pull-right">
         <li><a href="/#/home">Home</a></li>
-        <li><a href="/#/profile">Profile</a></li>
-        <li><a href="/#/amigos">Amigos</a></li>
+        <li><a href="/#/profile" ng-show="noNow">Profile</a></li>
+        <li><a href="/#/amigos" ng-show="noNow">Amigos</a></li>
+        <li><a href="/#/faq">FAQ'S</a></li>
+        <li><a type="button" class="btn btn-danger" ng-click="signout()">Sign out</a></li>
       </ul>
     </div>
 
@@ -52,12 +54,17 @@
   <!-- my scripts -->
   <script src="assets/js/app.js" charset="utf-8"></script>
   <script src="assets/js/home/homeCtrl.js" charset="utf-8"></script>
-  <script src="assets/js/login/loginCtrl.js" charset="utf-8"></script>
-  <script src="assets/js/profile/profileCtrl.js" charset="utf-8"></script>
-  <script src="assets/js/amigos/amigosCtrl.js" charset="utf-8"></script>
+  <script src="assets/js/controller/profileCtrl.js" charset="utf-8"></script>
+  <script src="assets/js/controller/amigosCtrl.js" charset="utf-8"></script>
   <script src="assets/js/faq/faqCtrl.js" charset="utf-8"></script>
+  <script src="assets/js/controller/mainCtrl.js" charset="utf-8"></script>
   <!-- this are the directives -->
   <script src="assets/js/features/sign-inDirective/sign-inDirective.js" charset="utf-8"></script>
+  <!-- this is the services -->
+  <script src="assets/js/services/mainService.js" charset="utf-8"></script>
+  <script src="assets/js/services/autoService.js" charset="utf-8"></script>
+  <!-- this is the signup button -->
+  <script src="assets/js/features/sign-upDirective/sign-upDirective.js" charset="utf-8"></script>
 
 </body>
 </html>

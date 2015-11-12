@@ -5,19 +5,17 @@ angular.module("meetMyAmigo", ["ui.router", "firebase"])
     .state("home",{
       url:"/home",
       templateUrl:"assets/js/home/home.html",
-      controller:"homeCtrl"
+      controller: "homeCtrl"
     })
-    // .state("login",{
-    //   url:"/login",
-    //   templateUrl: "assets/js/home.html"
-    // })
     .state("profile",{
       url:"/profile",
-      templateUrl: "assets/js/profile/profile.html"
+      templateUrl: "assets/js/profile/profile.html",
+      controller: "profileCtrl"
     })
     .state("amigos",{
       url:"/amigos",
-      templateUrl: "assets/js/amigos/amigos.html"
+      templateUrl: "assets/js/amigos/amigos.html",
+      controller: "amigosCtrl"
     })
     .state("faq",{
       url:"/faq",

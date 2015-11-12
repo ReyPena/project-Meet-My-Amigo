@@ -1,3 +1,0 @@
-angular.module("meetMyAmigo").controller("loginCtrl", function () {
-  // body...
-})

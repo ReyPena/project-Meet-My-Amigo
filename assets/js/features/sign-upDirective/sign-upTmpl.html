@@ -1,0 +1,74 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger center-block" data-toggle="modal" data-target="#sign-up">
+  Sign-Up
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="InputEmail1">Email address</label>
+            <input type="email" class="form-control" id="InputEmail" placeholder="Email" ng-model="amigo.email">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" ng-model="amigo.password">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">First Name</label>
+            <input type="text" class="form-control" id="fristName" placeholder="First Name" ng-model="amigo.name">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last name" ng-model="amigo.lastName">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Nickname</label>
+            <input type="text" class="form-control" id="fristName" placeholder="Nickname" ng-model="amigo.nickname">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">About Amigo</label>
+            <textarea type="text" class="form-control" id="aboutYou" placeholder="Somthing about your Amigo" ng-model="amigo.description.about"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">City,State</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Where are you from" ng-model="amigo.description.from">
+          </div>
+
+          <div class="form-gorup">
+            <label for="exampleInputFile">Gender</label>
+            <select id="selectgender" class="form-control" ng-model="amigo.description.gender">
+              <option value=""></option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <label for="picture">Picture</label>
+            <input type="file" value="Upload Image" id="picture">
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" ng-click="submit()">Submit</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
